@@ -1,8 +1,9 @@
 import random
 
+lista = [("k", "i", "s", "s", "a"), ("j", "a", "l", "k", "a", "p", "a", "l", "l", "o"),
+         ("a", "s", "u", "n","t", "o")]
+sanalista = ["kissa", "jalkapallo", "asunto"]
 uusisana = ""
-
-lista = [("k", "i", "s", "s", "a"), ("j", "a", "l", "k", "a", "p", "a", "l", "l", "o"), "asunto"]
 hidword = ""
 
 a = random.randint(0, 2)
@@ -18,7 +19,11 @@ sanavaikirjain = input("Haluatko arvata sanaa vai kirjainta? 0 jos sanaa, 1 jos 
 
 if sanavaikirjain == "0":
     sana_arvaus = input("Arvaa sanaa: ")
-
+    if sana_arvaus == sanalista[a]:
+        print("Oikein meni, voitit!")
+    else:
+        print("Väärin meni")
+a
     #tää kohta
 
 if sanavaikirjain == "1":
@@ -34,6 +39,7 @@ if sanavaikirjain == "1":
 
 
 print(uusisana)
+
 
 
 
